@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import I18nProvider from "@/components/layout/I18nProvider";
+import SessionProvider from "@/components/layout/SessionProvider";
 
 const geist = Geist({
   variable: "--font-geist",
@@ -22,10 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-slate-950 text-white">
-        <I18nProvider>
-          <Navbar />
-          <main className="flex-1 pt-16">{children}</main>
-        </I18nProvider>
+        <SessionProvider>
+          <I18nProvider>
+            <Navbar />
+            <main className="flex-1 pt-16">{children}</main>
+          </I18nProvider>
+        </SessionProvider>
       </body>
     </html>
   );

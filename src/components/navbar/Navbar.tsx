@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { useLocale } from "@/hooks/useLocale";
 import { cn } from "@/lib/utils";
-import { Globe, Map, Compass, User, Languages } from "lucide-react";
+import { Globe, Map, Compass, User, Languages, LogIn, LogOut, ShieldCheck } from "lucide-react";
+import { useSession, signIn, signOut } from "next-auth/react";
 
 const NAV_ITEMS = [
   { key: "home", href: "/", icon: Globe },
@@ -18,6 +19,9 @@ export default function Navbar() {
   const pathname = usePathname();
   const { t: tRaw } = useTranslation("common");
   const { toggle, locale } = useLocale();
+  const { data: session } = useSession();
+
+  const isAdmin = session?.user?.role === "admin";
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-white/10">
@@ -56,6 +60,33 @@ export default function Navbar() {
             <Languages className="w-4 h-4" />
             <span className="text-xs font-mono uppercase">{locale === "en" ? "עב" : "EN"}</span>
           </button>
+
+          {isAdmin && (
+            <span className="flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium text-emerald-400 bg-emerald-400/10 ms-1" title="Admin">
+              <ShieldCheck className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Admin</span>
+            </span>
+          )}
+
+          {session ? (
+            <button
+              onClick={() => signOut({ callbackUrl: "/" })}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-all ms-1"
+              title="Sign out"
+            >
+              <LogOut className="w-4 h-4" />
+              <span className="hidden sm:inline">Sign out</span>
+            </button>
+          ) : (
+            <button
+              onClick={() => signIn("google", { callbackUrl: "/" })}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium text-sky-400 hover:text-sky-300 hover:bg-sky-400/10 transition-all ms-1"
+              title="Sign in"
+            >
+              <LogIn className="w-4 h-4" />
+              <span className="hidden sm:inline">Sign in</span>
+            </button>
+          )}
         </div>
       </nav>
     </header>
