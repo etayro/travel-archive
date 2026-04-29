@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Home",
+    "countries": "Countries",
+    "trips": "Trips",
+    "about": "About"
+  },
+  "home": {
+    "title": "My Travel Archive",
+    "subtitle": "A personal record of places explored",
+    "visitedCountries": "Visited countries",
+    "totalTrips": "Total trips",
+    "yearsExploring": "Years exploring",
+    "exploreMap": "Explore the map",
+    "clickCountry": "Click a highlighted country to explore it"
+  },
+  "country": {
+    "overview": "Overview",
+    "trips": "Trips",
+    "visits": "visit",
+    "visits_plural": "visits",
+    "yearsVisited": "Years visited",
+    "bestSeason": "Best season",
+    "crowdLevel": "Crowd levels",
+    "viewTrip": "View trip",
+    "readPost": "Read full post",
+    "noTrips": "No trips recorded yet."
+  },
+  "trip": {
+    "style": "Style",
+    "partners": "Travelled with",
+    "stops": "Key stops",
+    "likes": "Highlights",
+    "dislikes": "Lowlights",
+    "route": "Route"
+  },
+  "post": {
+    "story": "Story",
+    "photos": "Photos",
+    "tips": "Practical tips",
+    "backToCountry": "Back to country"
+  },
+  "countries": {
+    "title": "All Countries",
+    "subtitle": "Explored so far",
+    "filter": "Filter by continent",
+    "all": "All",
+    "europe": "Europe",
+    "asia": "Asia",
+    "americas": "Americas",
+    "africa": "Africa",
+    "oceania": "Oceania"
+  },
+  "about": {
+    "title": "About This Archive",
+    "body": "This is a personal travel database — a living record of trips, places, and memories. Built with Next.js, TypeScript, and a lot of nostalgia."
+  },
+  "seasons": {
+    "spring": "Spring",
+    "summer": "Summer",
+    "autumn": "Autumn",
+    "winter": "Winter"
+  },
+  "crowd": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High"
+  },
+  "months": {
+    "jan": "Jan",
+    "feb": "Feb",
+    "mar": "Mar",
+    "apr": "Apr",
+    "may": "May",
+    "jun": "Jun",
+    "jul": "Jul",
+    "aug": "Aug",
+    "sep": "Sep",
+    "oct": "Oct",
+    "nov": "Nov",
+    "dec": "Dec"
+  },
+  "tripStyles": {
+    "road-trip": "Road Trip",
+    "city-break": "City Break",
+    "resort": "Resort",
+    "hiking": "Hiking",
+    "backpacking": "Backpacking",
+    "cruise": "Cruise",
+    "cultural": "Cultural"
+  }
+}

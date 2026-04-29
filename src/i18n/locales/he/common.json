@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "בית",
+    "countries": "מדינות",
+    "trips": "טיולים",
+    "about": "אודות"
+  },
+  "home": {
+    "title": "ארכיון הטיולים שלי",
+    "subtitle": "תיעוד אישי של מקומות שנחקרו",
+    "visitedCountries": "מדינות שביקרתי",
+    "totalTrips": "סה״כ טיולים",
+    "yearsExploring": "שנות חקר",
+    "exploreMap": "חקור את המפה",
+    "clickCountry": "לחץ על מדינה מסומנת כדי לחקור אותה"
+  },
+  "country": {
+    "overview": "סקירה כללית",
+    "trips": "טיולים",
+    "visits": "ביקור",
+    "visits_plural": "ביקורים",
+    "yearsVisited": "שנות ביקור",
+    "bestSeason": "עונה מומלצת",
+    "crowdLevel": "רמת עומס תיירים",
+    "viewTrip": "לצפות בטיול",
+    "readPost": "קרא פוסט מלא",
+    "noTrips": "לא נרשמו טיולים עדיין."
+  },
+  "trip": {
+    "style": "סגנון",
+    "partners": "נסעתי עם",
+    "stops": "תחנות עיקריות",
+    "likes": "הדגשים",
+    "dislikes": "אכזבות",
+    "route": "מסלול"
+  },
+  "post": {
+    "story": "הסיפור",
+    "photos": "תמונות",
+    "tips": "טיפים מעשיים",
+    "backToCountry": "חזרה למדינה"
+  },
+  "countries": {
+    "title": "כל המדינות",
+    "subtitle": "שנחקרו עד כה",
+    "filter": "סנן לפי יבשת",
+    "all": "הכל",
+    "europe": "אירופה",
+    "asia": "אסיה",
+    "americas": "אמריקות",
+    "africa": "אפריקה",
+    "oceania": "אוקיאניה"
+  },
+  "about": {
+    "title": "אודות הארכיון",
+    "body": "זהו ארכיון נסיעות אישי — תיעוד חי של טיולים, מקומות וזיכרונות. נבנה עם Next.js, TypeScript והרבה נוסטלגיה."
+  },
+  "seasons": {
+    "spring": "אביב",
+    "summer": "קיץ",
+    "autumn": "סתיו",
+    "winter": "חורף"
+  },
+  "crowd": {
+    "low": "נמוך",
+    "medium": "בינוני",
+    "high": "גבוה"
+  },
+  "months": {
+    "jan": "ינו׳",
+    "feb": "פבר׳",
+    "mar": "מרץ",
+    "apr": "אפר׳",
+    "may": "מאי",
+    "jun": "יוני",
+    "jul": "יולי",
+    "aug": "אוג׳",
+    "sep": "ספט׳",
+    "oct": "אוק׳",
+    "nov": "נוב׳",
+    "dec": "דצמ׳"
+  },
+  "tripStyles": {
+    "road-trip": "טיול רכב",
+    "city-break": "בריחה לעיר",
+    "resort": "אתר נופש",
+    "hiking": "טיול רגלי",
+    "backpacking": "גב ומזוודה",
+    "cruise": "שייט",
+    "cultural": "תרבותי"
+  }
+}
